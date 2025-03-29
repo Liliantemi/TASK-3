@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body class="body text-[15px]">
+    <div class="bg-teal-600">
+      <img class="lg:hidden" src="./images/bg-header-mobile.svg" alt="" />
+      <img
+        class="hidden lg:block"
+        src="./images//bg-header-desktop.svg"
+        alt=""
+      />
+    </div>
+
+    <div class="px-[30px] mt-[-25px] relative lg:px-[150px]">
+      <div class="relative w-full">
+        <div
+          id="searchContainer"
+          class="outline-none shadow-lg shadow-teal-700/10 w-full rounded-[10px] px-[15px] py-[10px] flex flex-wrap items-center min-h-[50px] transition-all duration-300 bg-white"
+        >
+          <div id="searchChips" class="flex flex-wrap gap-2"></div>
+
+          <input
+            id="jobSearch"
+            class="flex-1 outline-none bg-transparent py-[10px] min-w-[120px] pl-[10px]"
+            type="text"
+            placeholder="Search for jobs..."
+          />
+        </div>
+      </div>
+
+      <button
+        id="clearSearch"
+        class="absolute right-[40px] lg:right-[200px] text-teal-500 underline top-1/2 transform -translate-y-1/2 hidden"
+      >
+        Clear
+      </button>
+    </div>
+
+    <div
+      id="jobListings"
+      class="px-[30px] mt-[40px] flex flex-col gap-[30px] lg:px-[150px]"
+    ></div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

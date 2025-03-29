@@ -1,0 +1,22 @@
+body {
+  background-color: hsl(180, 63%, 97%);
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .job-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .job-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
