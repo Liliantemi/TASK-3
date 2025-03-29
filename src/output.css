@@ -234,6 +234,9 @@
   .sticky {
     position: sticky;
   }
+  .top-1 {
+    top: calc(var(--spacing) * 1);
+  }
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
@@ -456,6 +459,9 @@
   .h-\[2px\] {
     height: 2px;
   }
+  .h-\[20px\] {
+    height: 20px;
+  }
   .h-screen {
     height: 100vh;
   }
@@ -470,6 +476,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -584,6 +593,10 @@
   .translate-full {
     --tw-translate-x: 100%;
     --tw-translate-y: 100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
@@ -1362,6 +1375,18 @@
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-\[2\.5px\] {
+    padding-block: 2.5px;
+  }
+  .py-\[2px\] {
+    padding-block: 2px;
+  }
+  .py-\[3px\] {
+    padding-block: 3px;
+  }
   .py-\[10px\] {
     padding-block: 10px;
   }
@@ -1413,6 +1438,9 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-\[12px\] {
+    font-size: 12px;
   }
   .text-\[15px\] {
     font-size: 15px;
@@ -1691,6 +1719,9 @@
   }
   .shadow-initial {
     --tw-shadow-color: initial;
+  }
+  .shadow-teal-700 {
+    --tw-shadow-color: var(--color-teal-700);
   }
   .shadow-teal-700\/10 {
     --tw-shadow-color: color-mix(in oklab, var(--color-teal-700) 10%, transparent);

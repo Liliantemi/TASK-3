@@ -40,12 +40,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div class="text-teal-600 font-[500]">${job.company}</div>
                         ${
                           job.new
-                            ? '<div class="bg-teal-600 text-white px-2 py-1 rounded-full">NEW!</div>'
+                            ? '<div class="bg-teal-600 text-white h-[20px] text-[12px]  px-2 py-[2.5px] rounded-full">NEW!</div>'
                             : ""
                         }
                         ${
                           job.featured
-                            ? '<div class="bg-gray-800 text-white px-2 py-1 rounded-full">FEATURED</div>'
+                            ? '<div class="bg-gray-800 text-white h-[20px] text-[12px]  px-2 py-[2.5px] rounded-full">FEATURED</div>'
                             : ""
                         }
                     </div>
